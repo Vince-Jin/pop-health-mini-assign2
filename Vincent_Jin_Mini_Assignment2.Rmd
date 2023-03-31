@@ -1,0 +1,60 @@
+---
+title: "Vincent_Jin_Mini_Assignment2"
+author: "Vincent Jin"
+date: "2023-03-31"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Mini Assignment2
+## Vincent Jin
+
+``` {r}
+library(tidyverse)
+```
+
+# ============================================================ 
+# 	Mini-assignment # 2
+# ============================================================ 
+
+# write your R code after each of the questions (1 to 5)
+# no need to include the results of your code (i.e., only the commands are needed)
+
+# (1) calculate the following equation: 12 plus 8 plus 20, then divide by 10 all in one line)
+
+``` {r}
+print((12 + 8 + 20) / 10)
+```
+
+# (2) calculate the following equation: 30 plus 15 plus 5, then multiply by 20, subtract by 500, and finally divide by 25 (all in one line)
+
+``` {r}
+print(((30 + 15 + 5) * 20 - 500) / 25)
+```
+
+# (3) find rounded (5 decimals), floor, and ceiling of: 1.0005678
+
+``` {r}
+x <- 1.0005678
+round(x, 5)
+floor(x)
+ceiling(x)
+```
+
+# (4) print the patient's name of "DANIEL" in lowercase (note that the original string is in uppercase) 
+
+``` {r}
+patient <- "DANIEL"
+print(tolower(patient))
+```
+
+# (5) concatenate and print three diagnosis names of "Diabetes", "Peripheral Artery Disease", "Intermittent Claudication" separated by this character " > "
+
+``` {r}
+print(paste('Diabetes', 'Peripheral Artery Disease', 'Intermittent Claudication', sep = ' > ')) 
+```
